@@ -6,6 +6,10 @@ const convertToCelsius = (temp) => {
 
 const describeTemperature = (temp) => {
   currentTemp = convertToCelsius(temp);
+  // I understand if and else if statements from some previous experience
+  // with Java, using switch statement for practice in addition to if, else if,
+  // else statements.  I have commented out the if, else if and else statements
+  // for this exercise below the switch statement.
   switch (currentTemp) {
     case value:
       
@@ -20,7 +24,7 @@ const describeTemperature = (temp) => {
       
       break;
     default:
-      
+
       break;
   }
 }
