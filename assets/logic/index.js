@@ -25,17 +25,18 @@ const describeTemperature = (temp) => {
   }
 }
 
-const verifyInputIsNum = (number) => {
-  if (number !== NaN) {
-    describeTemperature(number);
+const userInput = () => {
+  const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheit?`);
+  console.log(fahrenheitTempStr);
+  const isNumber = isNaN(fahrenheitTempStr);
+  console.log(isNumber)
+  if (isNumber === false) {
+    console.log(`It is a number!`)
   }
   else {
+    alert(`Must be a number, please try again!`)
     userInput();
   }
 }
 
-const userInput = () => {
-  const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheit?`);
-  const fahrenheitTemp = Number(fahrenheitTempStr);
-  verifyInputIsNum(fahrenheitTemp);
-}
+userInput();
