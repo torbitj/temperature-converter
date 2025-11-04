@@ -13,14 +13,14 @@ const describeTemperature = (temp) => {
   const veryHot = "it is very hot";
 
   if (currentTemp < 0) {
-    console.log(`BRRRR it is ${currentTemp}°C, ${veryCold} outside!`)
+    console.log(`BRRRR it is ${currentTemp}°C. ${veryCold} outside!`)
   } else if (currentTemp < 20) {
-    console.log(`BRR it is ${currentTemp}°C, ${cold} outside!`)
+    console.log(`BRR it is ${currentTemp}°C. ${cold} outside!`)
   } else if (currentTemp < 30) {
-    console.log(`Very nice, it is ${currentTemp}°C, ${warm} outside!`)
+    console.log(`Very nice, it is ${currentTemp}°C. ${warm} outside!`)
   } else if (currentTemp < 40) {
-    console.log(`Sun is out and it is ${currentTemp}°C, ${hot} outside!`)
+    console.log(`Sun is out and it is ${currentTemp}°C. ${hot} outside!`)
   } else {
-    console.log(`Holy moly! It is ${currentTemp}°C, ${veryHot} outside!`)
+    console.log(`Holy moly! It is ${currentTemp}°C. ${veryHot} outside!`)
   }
 }
