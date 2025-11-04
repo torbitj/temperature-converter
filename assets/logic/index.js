@@ -6,22 +6,18 @@ const convertToCelsius = (temp) => {
 
 const describeTemperature = (temp) => {
   const currentTemp = convertToCelsius(temp);
-  const veryCold = "it is very cold";
-  const cold = "it is cold";
-  const warm = "it is warm";
-  const hot = "it is hot";
-  const veryHot = "it is very hot";
+  const thatIsStr = "That is"
 
   if (currentTemp < 0) {
-    console.log(`BRRRR it is ${currentTemp}°C. ${veryCold} outside!`)
+    alert(`BRRRR it is ${currentTemp}°C. ${thatIsStr} very cold!`)
   } else if (currentTemp < 20) {
-    console.log(`BRR it is ${currentTemp}°C. ${cold} outside!`)
+    alert(`BRR it is ${currentTemp}°C. ${thatIsStr} cold!`)
   } else if (currentTemp < 30) {
-    console.log(`Very nice, it is ${currentTemp}°C. ${warm} outside!`)
+    alert(`Very nice, it is ${currentTemp}°C. ${thatIsStr} warm!`)
   } else if (currentTemp < 40) {
-    console.log(`Sun is out and it is ${currentTemp}°C. ${hot} outside!`)
+    alert(`Sun is out and it is ${currentTemp}°C. ${thatIsStr} hot!`)
   } else {
-    console.log(`Holy moly! It is ${currentTemp}°C. ${veryHot} outside!`)
+    alert(`Holy moly! It is ${currentTemp}°C. ${thatIsStr} very hot!`)
   }
 }
 
@@ -29,8 +25,8 @@ const userInput = () => {
   const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheit?`);
   const isNumber = isNaN(fahrenheitTempStr);
   
-  //Verify if input is a number
-  if (isNumber === false) {
+  //Verify if input is a number (Have workd with Java before, "!" shorthand works in js too)
+  if (!isNumber) {
     const fahrenheitTemp = Number(fahrenheitTempStr);
     describeTemperature(fahrenheitTemp);
   }
