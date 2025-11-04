@@ -20,16 +20,16 @@ const describeTemperature = (temp) => {
       console.log(`BRRRR it is ${currentTemp}°C, ${veryCold} outside!`)
       break;
     case value:
-      console.log(`BRR is is ${currentTemp}°C, ${cold} outside!`)
+      console.log(`BRR it is ${currentTemp}°C, ${cold} outside!`)
       break;
     case value:
-      
+      console.log(`Very nice, it is ${currentTemp}°C, ${warm} outside!`)
       break;
     case value:
-      
+      console.log(`Sun is out and it is ${currentTemp}°C, ${hot} outside!`)
       break;
     default:
-
+      console.log(`Holy moly! It is ${currentTemp}°C, ${veryHot} outside!`)
       break;
   }
 }
