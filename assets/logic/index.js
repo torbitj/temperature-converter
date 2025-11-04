@@ -6,5 +6,21 @@ const convertToCelsius = (temp) => {
 
 const describeTemperature = (temp) => {
   currentTemp = convertToCelsius(temp);
-  
+  switch (currentTemp) {
+    case value:
+      
+      break;
+    case value:
+      
+      break;
+    case value:
+      
+      break;
+    case value:
+      
+      break;
+    default:
+      
+      break;
+  }
 }
