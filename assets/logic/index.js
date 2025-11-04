@@ -29,7 +29,7 @@ const userInput = () => {
   const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheit?`);
   const isNumber = isNaN(fahrenheitTempStr);
   
-  //Verify if input is a number
+  //Verify if input is a number (Have workd with Java before, "!" shorthand works in js too)
   if (!isNumber) {
     const fahrenheitTemp = Number(fahrenheitTempStr);
     describeTemperature(fahrenheitTemp);
