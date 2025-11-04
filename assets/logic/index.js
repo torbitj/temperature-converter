@@ -27,3 +27,12 @@ const describeTemperature = (temp) => {
     console.log(`Holy moly! It is ${currentTemp}°C. ${veryHot} outside!`)
   }
 }
+
+const verifyInputIsNum = (number) => {
+  if (number !== NaN) {
+    describeTemperature(number);
+  }
+  else {
+    userInput();
+  }
+}
