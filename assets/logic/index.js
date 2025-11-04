@@ -3,3 +3,8 @@ const convertToCelsius = (temp) => {
   const celsiusWholeTemp = Math.round(celsiusTemp);
   return celsiusWholeTemp;
 }
+
+const describeTemperature = (temp) => {
+  currentTemp = convertToCelsius(temp);
+  
+}
