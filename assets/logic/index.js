@@ -1,3 +1,6 @@
+const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheight?`);
+
+
 const convertToCelsius = (temp) => {
   const celsiusTemp = (temp - 32) / 1.8;
   const celsiusWholeTemp = Math.round(celsiusTemp);
