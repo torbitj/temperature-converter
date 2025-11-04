@@ -1,6 +1,3 @@
-const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheit?`);
-const fahrenheitTemp = Number(fahrenheitTempStr);
-
 const convertToCelsius = (temp) => {
   const celsiusTemp = (temp - 32) / 1.8;
   const celsiusWholeTemp = Math.round(celsiusTemp);
@@ -35,4 +32,10 @@ const verifyInputIsNum = (number) => {
   else {
     userInput();
   }
+}
+
+const userInput = () => {
+  const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheit?`);
+  const fahrenheitTemp = Number(fahrenheitTempStr);
+  verifyInputIsNum(fahrenheitTemp);
 }
