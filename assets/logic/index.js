@@ -30,7 +30,7 @@ const userInput = () => {
   const isNumber = isNaN(fahrenheitTempStr);
   
   //Verify if input is a number
-  if (isNumber === false) {
+  if (!isNumber) {
     const fahrenheitTemp = Number(fahrenheitTempStr);
     describeTemperature(fahrenheitTemp);
   }
