@@ -11,25 +11,19 @@ const describeTemperature = (temp) => {
   const warm = "it is warm";
   const hot = "it is hot";
   const veryHot = "it is very hot";
-  // I understand if and else if statements from some previous experience
-  // with Java, using switch statement for practice in addition to if, else if,
-  // else statements.  I have commented out the if, else if and else statements
-  // for this exercise below the switch statement.
-  switch (currentTemp) {
-    case value:
-      console.log(`BRRRR it is ${currentTemp}°C, ${veryCold} outside!`)
-      break;
-    case value:
-      console.log(`BRR it is ${currentTemp}°C, ${cold} outside!`)
-      break;
-    case value:
-      console.log(`Very nice, it is ${currentTemp}°C, ${warm} outside!`)
-      break;
-    case value:
-      console.log(`Sun is out and it is ${currentTemp}°C, ${hot} outside!`)
-      break;
-    default:
-      console.log(`Holy moly! It is ${currentTemp}°C, ${veryHot} outside!`)
-      break;
+
+  if (currentTemp < 0) {
+
   }
+      console.log(`BRRRR it is ${currentTemp}°C, ${veryCold} outside!`)
+
+      console.log(`BRR it is ${currentTemp}°C, ${cold} outside!`)
+
+      console.log(`Very nice, it is ${currentTemp}°C, ${warm} outside!`)
+
+      console.log(`Sun is out and it is ${currentTemp}°C, ${hot} outside!`)
+
+      console.log(`Holy moly! It is ${currentTemp}°C, ${veryHot} outside!`)
+
+  
 }
