@@ -28,6 +28,8 @@ const describeTemperature = (temp) => {
 const userInput = () => {
   const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheit?`);
   const isNumber = isNaN(fahrenheitTempStr);
+  
+  //Verify if input is a number
   if (isNumber === false) {
     const fahrenheitTemp = Number(fahrenheitTempStr);
     describeTemperature(fahrenheitTemp);
