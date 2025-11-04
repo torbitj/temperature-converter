@@ -13,9 +13,9 @@ const describeTemperature = (temp) => {
   } else if (currentTemp < 20) {
     alert(`BRR it is ${currentTemp}°C. ${thatIsStr} cold!`)
   } else if (currentTemp < 30) {
-    alert(`Very nice, it is ${currentTemp}°C. ${thatIsStr} warm!`)
+    alert(`Careful, it is ${currentTemp}°C. ${thatIsStr} warm!`)
   } else if (currentTemp < 40) {
-    alert(`Sun is out and it is ${currentTemp}°C. ${thatIsStr} hot!`)
+    alert(`Be very careful, it is ${currentTemp}°C. ${thatIsStr} hot!`)
   } else {
     alert(`Holy moly! It is ${currentTemp}°C. ${thatIsStr} very hot!`)
   }
