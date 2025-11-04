@@ -6,22 +6,18 @@ const convertToCelsius = (temp) => {
 
 const describeTemperature = (temp) => {
   const currentTemp = convertToCelsius(temp);
-  const veryCold = "it is very cold";
-  const cold = "it is cold";
-  const warm = "it is warm";
-  const hot = "it is hot";
-  const veryHot = "it is very hot";
+  const itIsStr = "it is"
 
   if (currentTemp < 0) {
-    alert(`BRRRR it is ${currentTemp}°C. ${veryCold} outside!`)
+    alert(`BRRRR it is ${currentTemp}°C. ${itIsStr} very cold outside!`)
   } else if (currentTemp < 20) {
-    alert(`BRR it is ${currentTemp}°C. ${cold} outside!`)
+    alert(`BRR it is ${currentTemp}°C. ${itIsStr} cold outside!`)
   } else if (currentTemp < 30) {
-    alert(`Very nice, it is ${currentTemp}°C. ${warm} outside!`)
+    alert(`Very nice, it is ${currentTemp}°C. ${itIsStr} warm outside!`)
   } else if (currentTemp < 40) {
-    alert(`Sun is out and it is ${currentTemp}°C. ${hot} outside!`)
+    alert(`Sun is out and it is ${currentTemp}°C. ${itIsStr} hot outside!`)
   } else {
-    alert(`Holy moly! It is ${currentTemp}°C. ${veryHot} outside!`)
+    alert(`Holy moly! It is ${currentTemp}°C. ${itIsStr} very hot outside!`)
   }
 }
 
