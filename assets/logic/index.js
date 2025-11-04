@@ -1,6 +1,3 @@
-const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheit?`);
-const fahrenheitTemp = Number(fahrenheitTempStr);
-
 const convertToCelsius = (temp) => {
   const celsiusTemp = (temp - 32) / 1.8;
   const celsiusWholeTemp = Math.round(celsiusTemp);
@@ -27,3 +24,20 @@ const describeTemperature = (temp) => {
     console.log(`Holy moly! It is ${currentTemp}°C. ${veryHot} outside!`)
   }
 }
+
+const userInput = () => {
+  const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheit?`);
+  const isNumber = isNaN(fahrenheitTempStr);
+  
+  //Verify if input is a number
+  if (isNumber === false) {
+    const fahrenheitTemp = Number(fahrenheitTempStr);
+    describeTemperature(fahrenheitTemp);
+  }
+  else {
+    alert(`Must be a number, please try again!`)
+    userInput();
+  }
+}
+
+userInput();
