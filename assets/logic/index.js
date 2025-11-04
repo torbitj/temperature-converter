@@ -1,5 +1,5 @@
-const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheight?`);
-
+const fahrenheitTempStr = prompt(`What is the current temperature in degrees Fahrenheit?`);
+const fahrenheitTemp = Number(fahrenheitTempStr);
 
 const convertToCelsius = (temp) => {
   const celsiusTemp = (temp - 32) / 1.8;
